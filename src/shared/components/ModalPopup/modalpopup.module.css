@@ -1,0 +1,114 @@
+:root {
+    --color-primary: #009579;
+    --color-primary-light: rgba(0, 149, 121, 0.5);
+    --color-primary-dark: #007f67;
+    --color-seconary: #252c6a;
+    --border-radius: 4px;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    /* opacity: 0; */
+    overflow: hidden;
+    overflow-y: auto;
+    transition: all 1s ease;
+    z-index: 999;
+}
+
+.modal_container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    min-height: 100%;
+    transition: all 1s ease;
+}
+
+.contain {
+    position: absolute;
+    /* position: relative; */
+    width: 400px;
+    min-width: 400px;
+    margin: 1rem;
+    background: #fff;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+    border-radius: var(--border-radius);
+    /* transform: translateY(-50px);
+    transition: opacity 1s, transform 1s; */
+}
+
+/* .modal_body {
+    position: relative;
+    margin: 20px;
+    width: 100%;
+    max-width: 600px;
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 20px 20px 20px 20px;
+    transform: translateY(-50px);
+    transition: opacity 1s, transform 1s;
+} */
+
+.modal_close_button {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    margin: 20px;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    padding: 0;
+    border: none;
+    color: rgb(50, 74, 75);
+    
+}
+
+.modal_close_button:hover {
+    color: black;
+}
+
+/* .modal_close_button:active {
+    transform: scale(0.99);
+} */
+
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    color: var(--color-primary);
+    font-weight: bolder;
+    display: flex;
+    align-items: center;
+    font-size: 2.5rem;
+    width: 80%;
+    justify-content: space-around;
+    margin-bottom: 0.2rem;
+    margin-top: 1.5rem;
+    
+}
+
+.tagline {
+    color: var(--color-primary);
+    margin-bottom: 0.5rem;
+}
+
+.linebreak {
+    background-color: var(--color-primary-light);
+    height: 4px;
+    width: 83%;
+    margin-bottom: 1.5rem;
+}
+
+

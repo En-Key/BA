@@ -1,0 +1,125 @@
+
+.container  {
+  max-width: 1140px;
+  margin: 16px auto;
+  /* padding-left: 46px; */
+  /* text-align: center; */
+  /* /* margin-bottom: 20px; */
+  padding-bottom: 20px; 
+}
+
+.accordeon {
+    width: 1140px;
+    list-style-type: none;
+    margin: 0 auto;
+    /* margin: 16px; */
+    padding: 16px;
+    /* padding-top: 16px;
+    padding-right: 16px;
+    padding-left: 16px;
+    padding-bottom: 16px; */
+    background-color: var(--accordeon-body);
+    border-radius: 7px;
+  }
+  
+  .accordeon_item {
+    margin-bottom: 16px;
+    background-color: var(--accordeon-header-background);
+    
+
+    border-radius: 7px;
+  }
+
+  .accordeon_header {
+    position: relative;
+    width: 100%;
+    padding: 20px 60px 20px 30px;
+    background-color: var(--accordeon-header-background);
+    color: var(--accordeon-header);
+    border: 0;
+    border-radius: 7px;
+    font-size: 22px;
+    text-align: left;
+    cursor: pointer;
+    transition: all 0.7s;
+  }
+
+  .accordeon_header.active {
+    color: #007f67;
+  }
+
+  .accordeon_header:hover {
+    color: #009579;
+  }
+  
+  .accordeon_collapse {
+    height: 0;
+    overflow: hidden;
+    transition: height 0.5s;
+  }
+  
+  /* .accordeon_collapse.open {
+    height: auto;
+  }
+
+  .accordeon_open {
+    height: auto;
+  } */
+  
+  .accordeon_body {
+    padding: 30px 60px 30px 30px;
+    background-color: var(--accordeon-body-open-background);
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    font-size: 20px;
+    color: var(--accordeon-body-open);
+    /* transition: all 1s; */
+    
+  }
+  
+  .accordeon_icon_add {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    display: block;
+    width: 30px;
+    height: 30px;
+    color: var(--accordeon-icon);
+    /* fill: rgb(255, 123, 0); */
+    transition: all 0.7s;
+    transform: translateY(-50%);
+  }
+
+  .accordeon_icon_add:hover {
+    color: #009579;
+  }
+
+  
+  .accordeon_icon_add.active {
+    transform: translateY(-50%) rotate(90deg);
+    /* fill: green; */
+    /* color: #009579; */
+    height: 0;
+  }
+
+  .accordeon_icon_remove {
+    height: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    /* display: block; */
+    /* width: 30px; */
+    /* height: 30px; */
+    /* color: #555555; */
+    transition: all 0.7s;
+    transform: translateY(-50%);
+  }
+
+  .accordeon_icon_remove.active {
+    display: block; 
+    width: 30px; 
+    height: 30px;
+
+  }
+  
